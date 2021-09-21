@@ -1106,7 +1106,17 @@
 - Class: UNSCHEDULED
   ID: 972242561
   Description: network outage
+  Severity: Outage- Class: UNSCHEDULED
+  ID: 972247519
+  Description: network outage
   Severity: Outage
+  StartTime: Sep 21, 2021 11:34 +0000
+  EndTime: Sep 21, 2021 21:00 +0000
+  CreatedTime: Sep 21, 2021 11:45 +0000
+  ResourceName: SPRACE-SE
+  Services:
+  - SRMv2
+# ---------------------------------------------------------
   StartTime: Sep 21, 2021 11:34 +0000
   EndTime: Sep 21, 2021 21:00 +0000
   CreatedTime: Sep 21, 2021 11:37 +0000
