@@ -13,9 +13,6 @@ Contacts:
     Name: Steve Timm
   - ID: cb55ac2721726ebc83c3781ebe798e05ba425c47
     Name: Joe Boyd
-  Submitter Contact:
-  - ID: 2ab71c21032fd77a73523c3b65af0510ac30d4e3
-    Name: Steve Timm
   VO Manager:
   - ID: 81b1a18848c9e41c87ee7104aac70b5fcf0c2176
     Name: Gabriele Garzoglio
@@ -27,16 +24,9 @@ ID: 65
 LongName: Fermilab/Argoneut
 MembershipServicesURL: https://voms.fnal.gov:8443/voms/fermilab
 OASIS:
-  Managers:
-    Gabriele Garzoglio:
-      DNs:
-      - /DC=org/DC=doegrids/OU=People/CN=Gabriele Garzoglio 762243
-      - /DC=com/DC=DigiCert-Grid/O=Open Science Grid/OU=People/CN=Gabriele Garzoglio
-        203
-      ID: 81b1a18848c9e41c87ee7104aac70b5fcf0c2176
   OASISRepoURLs:
-  - http://oasiscfs.fnal.gov:8000/cvmfs/argoneut.opensciencegrid.org/
-  UseOASIS: true
+    - http://oasiscfs.fnal.gov:8000/cvmfs/argoneut.opensciencegrid.org/
+  UseOASIS: false
 ParentVO:
   ID: 9
   Name: Fermilab

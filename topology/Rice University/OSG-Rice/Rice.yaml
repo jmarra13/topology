@@ -1,8 +1,26 @@
-Disable: false
 GroupDescription: (No resource group description)
 GroupID: 216
 Production: true
 Resources:
+  RICE-squid:
+    Active: true
+    ContactLists:
+      Administrative Contact:
+        Primary:
+          ID: dc09c1e13af6e0b51d103b920c8253943fa7f643
+          Name: Wei Li
+      Security Contact:
+        Primary:
+          ID: dc09c1e13af6e0b51d103b920c8253943fa7f643
+          Name: Wei Li
+    Description: Squid Server for Tier3 Computing Center
+    FQDN: bonner07.rice.edu
+    ID: 1023
+    Services:
+      Squid:
+        Description: Generic squid service
+    VOOwnership:
+      CMS: 100
   OSG-Rice:
     Active: true
     ContactLists:
@@ -10,37 +28,12 @@ Resources:
         Primary:
           ID: dc09c1e13af6e0b51d103b920c8253943fa7f643
           Name: Wei Li
-        Secondary:
-          ID: 83db8d8cc87ce27c4a1ca45ad928649747dfb26a
-          Name: Jamal Tildon Rorie
-      Miscellaneous Contact:
-        Primary:
-          ID: dc09c1e13af6e0b51d103b920c8253943fa7f643
-          Name: Wei Li
-        Secondary:
-          ID: 83db8d8cc87ce27c4a1ca45ad928649747dfb26a
-          Name: Jamal Tildon Rorie
-      Resource Report Contact:
-        Primary:
-          ID: dc09c1e13af6e0b51d103b920c8253943fa7f643
-          Name: Wei Li
-        Secondary:
-          ID: 83db8d8cc87ce27c4a1ca45ad928649747dfb26a
-          Name: Jamal Tildon Rorie
       Security Contact:
         Primary:
           ID: dc09c1e13af6e0b51d103b920c8253943fa7f643
           Name: Wei Li
-        Secondary:
-          ID: 83db8d8cc87ce27c4a1ca45ad928649747dfb26a
-          Name: Jamal Tildon Rorie
-      Submitter Contact:
-        Primary:
-          ID: 018d13f74f253622c6edd3b68f692cca5890b38f
-          Name: Pablo Yepes
     Description: Tier-3 computing center. Priority given to local users, but opportunistic
       use by CMS VO allowed.
-    Disable: false
     FQDN: bonner06.rice.edu
     ID: 348
     Services:

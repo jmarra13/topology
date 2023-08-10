@@ -30,9 +30,6 @@ Contacts:
     Name: Nathan Whitehorn
   - ID: 78ea3b6350f56c5004290f5df4ba427f6be79199
     Name: Benedikt Riedel
-  Submitter Contact:
-  - ID: d7ebadcbca04bf37b33f6183bea3245431eedf38
-    Name: Nathan Whitehorn
   VO Manager:
   - ID: d7ebadcbca04bf37b33f6183bea3245431eedf38
     Name: Nathan Whitehorn
@@ -49,14 +46,9 @@ ID: 124
 LongName: South Pole Telescope
 MembershipServicesURL: https://spt-mgt.grid.uchicago.edu:8443/voms/SPT
 OASIS:
-  Managers:
-    Nathan Whitehorn:
-      DNs: /DC=org/DC=opensciencegrid/O=Open Science Grid/OU=People/CN=Nathan Whitehorn
-        3937
-      ID: d7ebadcbca04bf37b33f6183bea3245431eedf38
   OASISRepoURLs:
-  - http://osg-cvmfs.grid.uchicago.edu:8000/cvmfs/spt.opensciencegrid.org
-  UseOASIS: true
+    - http://osg-cvmfs.grid.uchicago.edu:8000/cvmfs/spt.opensciencegrid.org
+  UseOASIS: false
 PrimaryURL: http://pole.uchicago.edu
 ReportingGroups:
 - SPT

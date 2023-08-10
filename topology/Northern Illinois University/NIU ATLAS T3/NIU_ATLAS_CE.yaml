@@ -1,4 +1,3 @@
-Disable: false
 GroupDescription: Compute element for atlas vo
 GroupID: 443
 Production: true
@@ -14,12 +13,7 @@ Resources:
         Primary:
           ID: a58e06cac96452a8ce15ec9e60a1a6fa1199d0df
           Name: Sergey Uzunyan
-      Submitter Contact:
-        Primary:
-          ID: a58e06cac96452a8ce15ec9e60a1a6fa1199d0df
-          Name: Sergey Uzunyan
     Description: HT condor CE gateway
-    Disable: false
     FQDN: t3nfs1.nicadd.niu.edu
     ID: 819
     Services:

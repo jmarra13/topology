@@ -1,52 +1,26 @@
-Disable: false
 GroupDescription: U.S. ATLAS Northeast Tier 2 Center
 GroupID: 8
 Production: true
 Resources:
   NET2:
-    Active: true
+    Active: false
     ContactLists:
       Administrative Contact:
         Primary:
-          ID: 644021d1367ee3da88c6ab9fcc8fc07e14e85690
-          Name: Augustine Abaris
-        Secondary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Miscellaneous Contact:
-        Primary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-        Secondary:
-          ID: 644021d1367ee3da88c6ab9fcc8fc07e14e85690
-          Name: Augustine Abaris
-        Tertiary:
           ID: 4407ce51850137cf80f8e2f95829669b90fdba12
           Name: Augustine Abaris
-      Resource Report Contact:
-        Primary:
+        Secondary:
           ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
           Name: Saul Youssef
-        Secondary:
-          ID: 644021d1367ee3da88c6ab9fcc8fc07e14e85690
-          Name: Augustine Abaris
-        Tertiary:
-          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
-          Name: Augustine Abaris
       Security Contact:
         Primary:
-          ID: 644021d1367ee3da88c6ab9fcc8fc07e14e85690
+          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
           Name: Augustine Abaris
         Secondary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Submitter Contact:
-        Primary:
           ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
           Name: Saul Youssef
     Description: 'U.S. ATLAS Northeast Tier 2 Center: Boston University and Harvard
       University'
-    Disable: false
     FQDN: atlas-ce.bu.edu
     ID: 477
     Services:
@@ -54,8 +28,8 @@ Resources:
         Description: Compute Element
         Details:
           hidden: false
-      SRMv2:
-        Description: SRM V2 Storage Element
+      GridFtp:
+        Description: Gridftp Storage Element
         Details:
           hidden: false
           uri_override: atlas.bu.edu:8443
@@ -73,21 +47,10 @@ Resources:
       StorageCapacityMax: 5500
       StorageCapacityMin: 2300
       TapeCapacity: 0
-  net2.bu.edu-squid:
-    Active: true
+  NET2v6:
+    Active: false
     ContactLists:
       Administrative Contact:
-        Primary:
-          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
-          Name: Augustine Abaris
-        Secondary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Miscellaneous Contact:
-        Primary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Resource Report Contact:
         Primary:
           ID: 4407ce51850137cf80f8e2f95829669b90fdba12
           Name: Augustine Abaris
@@ -101,13 +64,53 @@ Resources:
         Secondary:
           ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
           Name: Saul Youssef
-      Submitter Contact:
+    Description: 'U.S. ATLAS Northeast Tier 2 Center: Boston University and Harvard
+      University'
+    FQDN: ne4.bu.edu
+    ID: 1308
+    Services:
+      CE:
+        Description: Compute Element
+        Details:
+          hidden: false
+      GridFtp:
+        Description: Gridftp Storage Element
+        Details:
+          hidden: false
+          uri_override: atlas.bu.edu:8443
+    VOOwnership:
+      ATLAS: 100
+    WLCGInformation:
+      APELNormalFactor: 14.00
+      AccountingName: US-NET2
+      HEPSPEC: 121754
+      InteropAccounting: true
+      InteropBDII: true
+      InteropMonitoring: true
+      KSI2KMax: 1
+      KSI2KMin: 1
+      StorageCapacityMax: 5500
+      StorageCapacityMin: 2300
+      TapeCapacity: 0
+  net2.bu.edu-squid:
+    Active: false
+    ContactLists:
+      Administrative Contact:
         Primary:
+          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
+          Name: Augustine Abaris
+        Secondary:
+          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
+          Name: Saul Youssef
+      Security Contact:
+        Primary:
+          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
+          Name: Augustine Abaris
+        Secondary:
           ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
           Name: Saul Youssef
     Description: squid service for frontier and cvmfs
-    Disable: false
-    FQDN: atlas-net2.bu.edu
+    FQDN: at8.bu.edu
     ID: 923
     Services:
       Squid:
@@ -115,23 +118,9 @@ Resources:
     VOOwnership:
       ATLAS: 100
   perfSONAR-NET2-bw:
-    Active: true
+    Active: false
     ContactLists:
       Administrative Contact:
-        Primary:
-          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
-          Name: Augustine Abaris
-        Secondary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Miscellaneous Contact:
-        Primary:
-          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
-          Name: Augustine Abaris
-        Secondary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Resource Report Contact:
         Primary:
           ID: 4407ce51850137cf80f8e2f95829669b90fdba12
           Name: Augustine Abaris
@@ -145,12 +134,7 @@ Resources:
         Secondary:
           ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
           Name: Saul Youssef
-      Submitter Contact:
-        Primary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
     Description: perfSONAR bandwidth node
-    Disable: false
     FQDN: atlas-npt2.bu.edu
     ID: 578
     Services:
@@ -161,23 +145,9 @@ Resources:
     VOOwnership:
       ATLAS: 100
   perfSONAR-NET2-lat:
-    Active: true
+    Active: false
     ContactLists:
       Administrative Contact:
-        Primary:
-          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
-          Name: Augustine Abaris
-        Secondary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Miscellaneous Contact:
-        Primary:
-          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
-          Name: Augustine Abaris
-        Secondary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Resource Report Contact:
         Primary:
           ID: 4407ce51850137cf80f8e2f95829669b90fdba12
           Name: Augustine Abaris
@@ -191,12 +161,7 @@ Resources:
         Secondary:
           ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
           Name: Saul Youssef
-      Submitter Contact:
-        Primary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
     Description: perfSONAR latency site for NET2
-    Disable: false
     FQDN: atlas-npt1.bu.edu
     ID: 577
     Services:
@@ -207,7 +172,7 @@ Resources:
     VOOwnership:
       ATLAS: 100
   perfSONAR_BU:
-    Active: true
+    Active: false
     ContactLists:
       Administrative Contact:
         Primary:
@@ -216,17 +181,6 @@ Resources:
         Secondary:
           ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
           Name: Saul Youssef
-      Miscellaneous Contact:
-        Primary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-      Resource Report Contact:
-        Primary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
-        Secondary:
-          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
-          Name: Augustine Abaris
       Security Contact:
         Primary:
           ID: 4407ce51850137cf80f8e2f95829669b90fdba12
@@ -234,12 +188,7 @@ Resources:
         Secondary:
           ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
           Name: Saul Youssef
-      Submitter Contact:
-        Primary:
-          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
-          Name: Saul Youssef
     Description: PerfSonar for ATLAS NET2
-    Disable: false
     FQDN: atlas-owamp.bu.edu
     ID: 529
     Services:
@@ -247,6 +196,33 @@ Resources:
         Description: PerfSonar Latency monitoring node
         Details:
           endpoint: atlas-owamp.bu.edu
+    VOOwnership:
+      ATLAS: 100
+  SQUID_SLATE_BU:
+    Active: false
+    ContactLists:
+      Administrative Contact:
+        Primary:
+          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
+          Name: Augustine Abaris
+        Secondary:
+          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
+          Name: Saul Youssef
+      Security Contact:
+        Primary:
+          ID: 4407ce51850137cf80f8e2f95829669b90fdba12
+          Name: Augustine Abaris
+        Secondary:
+          ID: 82375e645bdcae71e863c8a7aa7eb7f8cf553768
+          Name: Saul Youssef
+    Description: SLATE Services for NET2
+    FQDN: atlas-slate01.bu.edu
+    ID: 1131
+    Services:
+      Squid:
+        Description: Generic squid service
+        Details:
+          Monitored: true
     VOOwnership:
       ATLAS: 100
 SupportCenter: USATLAS
